@@ -1,0 +1,62 @@
+h1{
+  color: red;
+}
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+
+
+
+body{
+  display: flex;
+  height: 100vh;
+  gap: 30px;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-image:url("http://localhost:8080/css/coins.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: bottom;
+  font-family: 'Spectral', serif;
+  /* background:radial-gradient(circle, #F2ECB6, #A96F44); */
+}
+
+button{
+  color: black;
+  font-weight: bold;
+  border: 5px solid black;
+  padding: 20px;
+  transition: .2s;
+  margin: 20px;
+  font-size: 20px;
+}
+
+button:hover{
+  color: black;
+  background-color: #F2ECB6;
+}
+
+p{
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: 3px, solid, black;
+  width: 30%;
+  padding:20px;
+}
